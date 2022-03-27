@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aws-asg-deployer"
+version = "0.1.0"
+description = "Python package + CLI tool to manage deploying new instances into AWS Autoscaling Groups."
+authors = ["Ayaz Abbas <lfcayaz@gmail.com>"]
+license = "MIT License"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
