@@ -1,12 +1,17 @@
 [tool.poetry]
-name = "aws-asg-deployer"
+name = "asgd"
 version = "0.1.0"
-description = "Python package + CLI tool to manage deploying new instances into AWS Autoscaling Groups."
+description = "ASG Deployer. CLI tool to manage deploying new instances into AWS Autoscaling Groups."
 authors = ["Ayaz Abbas <lfcayaz@gmail.com>"]
 license = "MIT License"
 
+[tool.poetry.scripts]
+asgd = "asgd.cli:app"
+
 [tool.poetry.dependencies]
-python = ">=3.8"
+python = ">=3.8, <4.0"
+typer = "^0.4.0"
+boto3 = "^1.21.27"
 
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"
